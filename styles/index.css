@@ -1,0 +1,148 @@
+/* by TakeMyEye*/
+*{
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  background: url(img/back.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.title{
+  position: absolute;
+  left: 1%;
+  font-size: 50px;
+  color: #fefefe;
+  font-weight: 600px;
+  text-shadow: -5px 10px 15px black;
+  border: 2px #fefefe solid;
+  padding: 0 4px 0 4px;
+  border-radius: 13px;
+  background-color: rgba(0, 0, 0, 0.479);
+}
+.about{
+  width: auto;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 15px;
+  font-size: 17px;
+  color: #fefefe;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 13px;
+  border: 1px #fefefed2 solid;
+}
+.login{
+  padding: 5px 15px 5px 15px;
+  border-radius: 13px;
+  border: 2px #fefefe solid;
+  position: absolute;
+  right: 1%;
+  font-size: 25px;
+  color: #fefefe;
+  background-color: rgb(0, 0, 0);
+  transition: 0.5s ease-in-out;
+}
+.login:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(24, 24, 24);
+  border: 2px rgb(24, 24, 24) solid;
+}
+.socium{
+  position: absolute;
+  bottom: 20px;
+  left: 1%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.479);
+  border: 1px #fefefed2 solid;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.blockDinamicText{
+  width: 300px;
+  height: 250px;
+  background-color: rgba(0, 0, 0, 0.479);
+  border-radius: 13px;
+  backdrop-filter: blur(4px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.description{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.dinamicText{
+  position: absolute;
+  bottom: 10px;
+  font-size: 15px;
+}
+.Phrase{
+  font-size: 20px;
+  animation: delay 4s ease-in-out infinite;
+  opacity: 0;
+}
+.Author{
+  font-size: 25px;
+  animation: delay 4s ease-in-out infinite;
+  opacity: 0;
+}
+@keyframes delay{
+  0%{
+    opacity: 0;
+  }
+  10%{
+    opacity: 1;
+  }
+  80%{
+    opacity: 1;
+  }
+  90%{
+    opacity: 0;
+  }
+
+}
+.clock{
+  background-color: rgba(0, 0, 0, 0.479);
+  padding: 5px;
+  position: absolute;
+  right: 1%;
+  bottom: 20px;
+  font-size: 48px;
+  color: #fefefe;
+  border-radius: 13px;
+  border: 1px #fefefed2 solid;
+}
